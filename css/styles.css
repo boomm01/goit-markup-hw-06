@@ -834,8 +834,13 @@ body{
 	background-color: transparent;
 	outline: transparent;
 	padding-left: 42px;
-	transition: transform color 250ms var(--cubik), color 250ms var(--cubik);
+	transition:  border 250ms var(--cubik), border 250ms var(--cubik);
 
+}
+
+.modal-input:hover .modal-form-icon,
+.modal-input:focus .modal-form-icon{
+	color: var(--brand-color);
 }
 
 .modal-input:focus,
@@ -928,6 +933,7 @@ body{
 .modal-check-polyti{
 	font-family: inherit;
 	color: var(--brand-color);
+	margin-left: 5px;
 }
 
 .modal-form-button{	
