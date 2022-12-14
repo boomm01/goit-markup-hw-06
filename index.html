@@ -365,13 +365,26 @@
 						</li>
 				</ul>
 			</div>
+			<div class="footer-email">	
+				<p class="footer-email-text">Підпишіться на розсилку</p>	
+				<label for="footer-user-email" class="footer-form"></label>
+				<form class="footer-email-form">
+					<input type="email" name="footer-user-emai" class="footer-input"  required id="footer-user-email" placeholder="E-mail">
+					<button type="button" class="footer-button"> Підписатися
+						<svg class="footer-form-icon" width="24" height="24">
+							<use href="./images/symbol-defs.svg#icon-icon-send">
+							</use>
+						</svg>
+					</button>	
+				</form>
+			</div>	
 		</div>
 	</footer>
 	<div class="backdrop is-hidden" data-modal >
 		<div class="modal">
 			<button type="button" class="modal-button" data-modal-close >
 				<svg class="modal-icon" width="11" height="11">
-					<use href="./images/X.svg#icon-modalX">
+					<use href="./images/symbol-defs.svg#icon-Vector-2">
 					</use>
 				</svg>
 			</button>
@@ -411,8 +424,8 @@
 					<label for="user-text" class="modal-form-label">Коментар</label>
 					<textarea name="user-text" id="user-text" placeholder="Введіть текст" class="modal-field-comment"></textarea>
 				</div>
-				<div class="modal-field">
-				<input type="checkbox" name="policy" id="policy" class="modal-check hide">
+				<div class="modal-field position">
+				<input type="checkbox" name="policy" id="policy" class="modal-check hide" required>
 				<label for="policy" class="check-text">
 					<span>
 						<svg class="modal-check-icon" width="16" height="15">
